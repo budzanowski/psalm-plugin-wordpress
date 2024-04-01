@@ -1044,7 +1044,9 @@ class Plugin implements
 				$return_type = $hook['types'][0];
 
 				// for bool we can use 0, so "__return_true" and "__return_false" can be used without error, as for bool only (!) filters the previous value doesn't matter
-				if ( $return_type->isBool() ) {
+				// allow this for "mixed" too, since it could be bool and we don't want to force types on badly/non-documented filters
+				// same for single int type, where any previously filtered in values are often irrelevant
+				if ( $return_type->isBool() || $return_type->isMixed() || $return_type->isInt() ) {
 					$min_args = 0;
 				}
 			} else {
