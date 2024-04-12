@@ -229,6 +229,8 @@ class Plugin implements
 			self::getVendorDir( 'vendor/php-stubs/wp-cli-stubs' ) . '/wp-cli-stubs.php',
 			self::getVendorDir( 'vendor/php-stubs/wp-cli-stubs' ) . '/wp-cli-commands-stubs.php',
 			self::getVendorDir( 'vendor/php-stubs/wp-cli-stubs' ) . '/wp-cli-i18n-stubs.php',
+			self::getVendorDir( 'vendor/php-stubs/woocommerce-stubs' ) . 'woocommerce-stubs.php',
+			self::getVendorDir( 'vendor/php-stubs/woocommerce-stubs' ) . 'woocommerce-packages-stubs.php',
 			__DIR__ . '/stubs/globals.php',
 			__DIR__ . '/stubs/overrides.php',
 		];
