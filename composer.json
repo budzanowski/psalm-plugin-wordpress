@@ -14,7 +14,7 @@
 		},
 			"name": "Bartosz Budzanowski",
 			"role": "Developer"
-		},
+		}
 	],
 	"support": {
 		"issues": "https://github.com/budzanowski/psalm-plugin-wordpress/issues",
